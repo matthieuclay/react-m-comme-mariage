@@ -1,0 +1,54 @@
+/*** COLORS ***/
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --unbleached-white: rgba(251, 250, 245, 1);
+  --grey: rgba(96, 96, 96, 1);
+  --gold: rgba(250, 211, 144, 1);
+  --black: rgba(21, 21, 21, 1);
+  --red: rgba(183, 21, 64, 1);
+
+  --primary: var(--unbleached-white);
+  --secondary: var(--grey);
+  --tertiary: var(--gold);
+}
+/****************/
+
+@mixin XYCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  // font-size: calc(10px + 0.33vw);
+
+  background-color: var(--white);
+  color: var(--secondary);
+
+  transition: all 0.2s ease-in-out;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}

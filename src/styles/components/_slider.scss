@@ -1,0 +1,10 @@
+.slider {
+	@include XYCenter;
+
+	img {
+		width: 100%;
+		height: calc(100vh - 500px);
+		object-fit: cover;
+		object-position: 50% 35%;
+	}
+}

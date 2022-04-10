@@ -1,0 +1,18 @@
+.footer {
+  @include XYCenter;
+  flex-direction: column;
+  text-align: center;
+
+  .social {
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .footer {
+    .social {
+      @include XYCenter;
+    }
+  }
+}

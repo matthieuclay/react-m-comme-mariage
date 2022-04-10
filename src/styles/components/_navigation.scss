@@ -1,0 +1,21 @@
+.navigation {
+  width: 100%;
+  border-top: 1px solid var(--secondary);
+
+  ul {
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      a {
+        line-height: 25px;
+        text-transform: capitalize;
+      }
+
+      .nav-active {
+        font-weight: 600;
+      }
+    }
+  }
+}

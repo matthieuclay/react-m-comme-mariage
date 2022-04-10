@@ -1,0 +1,115 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 20px;
+
+  .contact-form {
+    width: 100%;
+    @include XYCenter;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--primary);
+
+    h2 {
+      line-height: 1.34em;
+      font-size: calc(40px + 0.33vw);
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 20px 0;
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.75em;
+      font-size: 18px;
+      padding: 20px;
+    }
+
+    .form-content {
+      width: 100%;
+      padding: 20px;
+      @include XYCenter;
+      flex-direction: column;
+
+      input:not([type="submit"]) {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid var(--secondary);
+
+        &:hover {
+          border: 1px solid var(--secondary);
+        }
+
+        &:focus {
+          border: 1px solid var(--secondary);
+        }
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 18px;
+        color: var(--secondary);
+        background-color: var(--tertiary);
+        cursor: pointer;
+
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: var(--primary);
+          background-color: var(--secondary);
+        }
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        margin: 10px 0;
+        font-family: inherit;
+        resize: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid var(--secondary);
+
+        &:hover {
+          border: 1px solid var(--secondary);
+        }
+
+        &:focus {
+          border: 1px solid var(--secondary);
+        }
+      }
+    }
+
+    .form-message {
+    }
+  }
+
+  img {
+    display: none;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .contact {
+    padding: 40px;
+
+    .contact-form {
+      width: 50%;
+      padding: 40px;
+    }
+
+    img {
+      display: inline;
+      width: 50%;
+    }
+  }
+}

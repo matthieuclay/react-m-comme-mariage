@@ -1,0 +1,11 @@
+.copyright {
+  width: 100%;
+  @include XYCenter;
+  padding: 25px 0;
+  background-color: var(--primary);
+
+  span {
+    line-height: 1.79em;
+    font-size: 14px;
+  }
+}

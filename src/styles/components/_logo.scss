@@ -1,0 +1,16 @@
+.logo {
+	@include XYCenter;
+	flex-direction: column;
+
+	margin: 20px 0;
+	padding: 20px 0;
+
+	img {
+		width: 350px;
+		height: auto;
+	}
+
+	span {
+		font-size: 14px;
+	}
+}
